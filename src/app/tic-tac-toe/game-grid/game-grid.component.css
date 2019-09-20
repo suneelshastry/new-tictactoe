@@ -1,0 +1,39 @@
+.cell {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    max-width: 255px;
+    flex-wrap: wrap;
+}
+
+.grid div:nth-child(3n+3) {
+    border-right: none;
+}
+
+.grid div:nth-child(6) ~ div {
+    border-bottom: none;
+}
+
+.div:nth-child(3n+0) {
+    border: none;
+}
+
+.disable {
+    cursor: not-allowed;
+}
+
+.msg {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

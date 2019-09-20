@@ -1,0 +1,13 @@
+<div class="game-header">
+  <span class="placeholder-elem"></span>
+  <h1>Tic Tac Toe</h1>
+  <div class="reset-button">
+    <button type="button" class="btn btn-primary" (click)="resetGame()">
+      Reset
+    </button>
+  </div>
+</div>
+<div class="game-board">
+<app-game-grid [restart]="eventSubject.asObservable()"></app-game-grid>
+</div>
+

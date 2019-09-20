@@ -1,0 +1,22 @@
+.game-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.reset-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.placeholder-elem {
+    opacity: 0;
+}
+
+.game-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

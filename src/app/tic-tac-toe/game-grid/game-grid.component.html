@@ -1,0 +1,13 @@
+
+<div class="grid">
+  <div class="cell" 
+    *ngFor="let cell of grid"
+    (click)="selectCell(cell, $event)"
+    [class.disable]="cell.value !== ''">
+    {{cell.value}}
+  </div>
+</div>
+
+<div class="msg">
+  {{msg}}
+</div>
