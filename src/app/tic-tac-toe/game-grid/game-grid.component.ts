@@ -65,7 +65,7 @@ export class GameGridComponent implements OnInit {
   }
 
   selectCell(cell, _evt) {
-    if (this.gameFinished || this.currentPlayer.name === 'Computer') {
+    if (this.gameFinished || this.currentPlayer.name === 'Computer' || cell.value !== '') {
       _evt.stopPropagation();
       return;
     }
